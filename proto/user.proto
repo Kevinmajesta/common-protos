@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package user; 
+
+option go_package = "github.com/Kevinmajesta/common-protos/gen/go/user"; 
+
+message GetUserRequest {
+  string user_id = 1;
+}
+
+message UserResponse {
+  string id = 1;
+  string email = 2;
+  string name = 3; // NamaLengkap
+}
+
+service UserService {
+  rpc GetUser(GetUserRequest) returns (UserResponse);
+}
