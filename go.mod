@@ -1,4 +1,4 @@
-module Kevinmajesta/common-protos
+module github.com/Kevinmajesta/common-protos
 
 go 1.23.3
 
